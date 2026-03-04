@@ -1,7 +1,7 @@
 .logo img {
   top: 5%;
   left: 78%;
-  height: 4vw;
+  height: 6vw;
   background-color: transparent;
   position: absolute;
   animation: wiggle 1s ease-in-out infinite;
@@ -10,7 +10,7 @@
 .logo h1 {
   color: rgb(202, 110, 40);
   top: 5%;
-  left: 82%;
+  left: 84%;
   height: 4vw;
   background-color: transparent;
   position: absolute;
@@ -93,10 +93,14 @@ body {
   background-color: #555;
   font-size: clamp(14px, 4vw, 28px);
   color: white;
-  padding: 20px 34px;
+  padding: clamp(8px, 2vw, 20px) clamp(16px, 4vw, 34px);
+  /* 20px 34px; */
   border: none;
   cursor: pointer;
+  max-width: 80vw;
+  width: max-content;
   border-radius: 10px;
+  text-align: center;
   /* flash ------!!! this doesnt work... */
   transition: background-color 0.2s;
   /* Smooth transition for default state changes */
