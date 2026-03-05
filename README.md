@@ -1,35 +1,56 @@
 # MEDP33100 - Project 1 Interactive Storytelling 
-[EDIT THIS FILE for documentation]
-
+Eid al-Fitr: A Personal Storytelling Celebration
 ## Live Demo
 
 - Include a link to the live version of the project hosted on GitHub Pages.
 
 ## Project Overview
 
-- Briefly describe the purpose of the project.
-- Explain the story you are telling through the webpage and the key interactive elements.
+This project is an interactive storytelling webpage about Eid al-Fitr, a religious celebration that marks the end of Ramadan in Islam. The goal of the project is to present both the cultural significance of Eid and my personal experiences celebrating it with family.
+
+The webpage guides users through different moments of the Eid experience from the fasting month of Ramadan to the excitement of Eid morning. Each section of the website reveals parts of the story through interactive elements such as clickable images, animated transitions, and sound effects.
+
+The design uses a dark theme with gold accents to reflect the festive and spiritual atmosphere of Eid. Decorative Islamic patterns and borders were added to visually enhance the storytelling experience.
 
 ## Features
 
-- List the key features of the project, including:
-    - **Animations**: Describe the animations you implemented (e.g., CSS transitions, GSAP effects).
-    - **Sound Effects**: Specify where sound effects are used and how they enhance the user experience.
-    - **User-triggered Events**: Explain how users interact with the page (e.g., clicking, scrolling, hovering) and how the page responds.
-    - **Responsive Design**: Explain how the design adapts to different devices (e.g., desktop, tablet, mobile).
+- Several animations were implemented to make the webpage engaging and interactive.
 
+-> Image Hover Animation (CSS Transition)
+When users hover over the images in Section 1, the images slightly enlarge and display a golden glow. This visual feedback encourages users to interact with the images.
+
+-> Scroll Animation (GSAP / ScrollTrigger)
+Story sections appear smoothly as the user scrolls down the page, creating a storytelling flow and guiding the viewer through the narrative.
+
+-> Decorative Border / Visual Effects
+Golden decorative borders and corner patterns create a festive Eid aesthetic and visually separate each storytelling section.
 ## Technologies Used
 
 - List the technologies and tools used in the project:
-    - **Languages**: HTML, CSS, JavaScript
-    - **Libraries**: (e.g., GSAP for animations)
-    - **Other**: GitHub Pages for hosting, Figma for design
+-> Languages: HTML5, CSS3, JavaScript
+
+-> Libraries: GSAP (GreenSock Animation Platform) – used for smooth scrolling animations and dynamic visual effects.
+
+-> Other Tools: GitHub Pages – used to host the live version of the website.
 
 ## Credits
 
-- List any third-party assets used in the project (e.g., sound effects, images, fonts) and provide proper attribution.
-- Acknowledge any resources, tutorials, or references you used to help complete the project.
+-> Images
 
+Images were sourced from: Pinterest, Google Images, AI Images
+
+These images were used for educational purposes to represent cultural aspects of Ramadan and Eid celebrations.
+
+-> Sound: Background audio sourced from royalty-free sound libraries.
+
+-> Design References
+Inspiration from interactive storytelling websites such as
+http://rice.jennytypes.com
+
+-> Learning Resources: W3Schools, CSS tutorials, AI assistance for debugging, understanding the code and layout improvements.
 ## Future Enhancements
 
-- List any features you would’ve liked to add if given more time
+- List any features I would’ve liked to add if given more time
+ 1. Adding more interactive story sections
+ 2. Including more sound effects triggered by user actions
+ 3. Expanding the story with more personal memories and multimedia elements.
