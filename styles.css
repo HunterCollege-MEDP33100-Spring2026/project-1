@@ -69,10 +69,11 @@ body {
   font-size: xx-large;
   position: absolute;
   top: 30%;
+  left: 10%;
   font-size: clamp(14px, 4vw, 28px);
   color: white;
   /* ??text doesnt get centered? */
-  text-align: center;
+  /* text-align: center; */
 
 }
 
