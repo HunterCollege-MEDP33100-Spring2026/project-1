@@ -1,10 +1,20 @@
 .logo img {
-  top: 5%;
-  left: 2%;
   height: 6vw;
   background-color: transparent;
-  position: absolute;
+  /* position: absolute; */
+  /* top and left dont work anymore when theres absoluve position not on. */
+
   animation: wiggle 1s ease-in-out;
+}
+
+/* flex box could be** */
+
+.logo {
+  display: flex;
+  /* align-items: center; */
+  position: absolute;
+  top: 5%;
+  left: 2%;
 }
 
 .logo h1 {
@@ -13,7 +23,8 @@
   left: 8%;
   height: 4vw;
   background-color: transparent;
-  position: absolute;
+  /* position: absolute; */
+  line-height: 100%;
   font-family: "Amatic SC", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -69,11 +80,12 @@ body {
   font-size: xx-large;
   position: absolute;
   top: 30%;
-  left: 10%;
   font-size: clamp(14px, 4vw, 28px);
   color: white;
   /* ??text doesnt get centered? */
-  /* text-align: center; */
+  text-align: center;
+  width: 100%;
+  padding: 20px;
 
 }
 
