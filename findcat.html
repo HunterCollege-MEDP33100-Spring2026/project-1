@@ -18,13 +18,20 @@
     <h1>Saving Echo</h1>
   </div>
 
-  <div class="background">
+  <div class="background-cat1">
     <img src="images/ally.png">
-
-    <div class="text">You are tired from work and now on your way back home. Suddenly you hear a cat crying. You've been
-      always a sweet caring person.</div>
-    <a href="findcat.html"><button id="flashButton">Wanna go save Echo?</button></a>
   </div>
+
+  <div class="night-scene">
+    <div class="light-streak"></div>
+  </div>
+
+  <audio id="cryingCat">
+    <source src="images/cryingcat.mp3" type="audio/mpeg">
+  </audio>
+
+  <button onclick="playMusic()" id="letCry">Listen to find where Echo is!</button>
+  <a href="savecat.html"><button id="doYouSee">You can't see Echo?</button></a>
 
   <script src="script.js"></script>
 </body>

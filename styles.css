@@ -1,0 +1,351 @@
+.logo img {
+  height: 6vw;
+  background-color: transparent;
+  /* position: absolute; */
+  /* top and left dont work anymore when theres absoluve position not on. */
+
+  animation: wiggle 1s ease-in-out;
+}
+
+/* flex box could be** */
+
+.logo {
+  display: flex;
+  /* align-items: center; */
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+
+.logo h1 {
+  color: rgb(169, 108, 108);
+  top: 5%;
+  left: 8%;
+  height: 4vw;
+  background-color: transparent;
+  /* position: absolute; */
+  line-height: 100%;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(30deg);
+  }
+
+  50% {
+    transform: rotate(-30deg);
+  }
+
+  75% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.background img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  opacity: 0.8;
+  /* margin: -8px 0 0 -8px; */
+}
+
+.background-cat1 img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+
+body {
+  margin: 0;
+}
+
+
+.text {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+  position: absolute;
+  top: 30%;
+  font-size: clamp(14px, 4vw, 28px);
+  color: white;
+  /* ??text doesnt get centered? */
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+
+}
+
+/* buttons Effects*/
+
+#flashButton:hover,
+#letCry:hover,
+#underRocks:hover,
+#doYouSee:hover {
+  background-color: rgb(193, 129, 11);
+}
+
+@keyframes flashEffect {
+  0% {
+    box-shadow: 0 0 0 0 rgba(248, 223, 130, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 123, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
+}
+
+#flashButton,
+#letCry,
+#doYouSee,
+#underRocks {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #555;
+  font-size: clamp(14px, 4vw, 28px);
+  color: white;
+  padding: clamp(8px, 2vw, 20px) clamp(16px, 4vw, 34px);
+  /* 20px 34px; */
+  border: none;
+  cursor: pointer;
+  max-width: 80vw;
+  width: max-content;
+  border-radius: 10px;
+  text-align: center;
+  /* flash ------!!! this doesnt work... */
+  /* Smooth transition for default state changes */
+  transition: background-color 0.2s;
+  animation: flashEffect 1.5s infinite;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+
+}
+
+#flashButton {
+  top: 50%;
+  left: 50%;
+}
+
+#letCry {
+  top: 30%;
+  left: 70%;
+}
+
+#doYouSee {
+  display: none;
+  top: 60%;
+  left: 60%;
+}
+
+#underRocks {
+  top: 40%;
+  left: 40%;
+}
+
+#removeRocks {
+  background-color: rgb(193, 129, 11);
+  display: none;
+  pointer-events: none;
+  top: 30%;
+  left: 50%;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #e3c681;
+  font-size: clamp(14px, 4vw, 28px);
+  color: rgb(34, 27, 10);
+  font-weight: bold;
+  padding: clamp(8px, 2vw, 20px) clamp(16px, 4vw, 34px);
+  /* 20px 34px; */
+  border: none;
+  cursor: pointer;
+  max-width: 80vw;
+  width: max-content;
+  border-radius: 10px;
+  text-align: center;
+  /* flash ------!!! this doesnt work... */
+  transition: background-color 0.2s;
+  /* Smooth transition for default state changes */
+
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+
+@keyframes passBy {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  13% {
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.7);
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100vw);
+    opacity: 0;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.light-streak {
+  width: 30%;
+  height: 100%;
+  background: rgb(231, 197, 93);
+  position: absolute;
+  top: 30%;
+  animation: passBy 3s linear infinite;
+  filter: blur(300px);
+  /* Creates soft glow */
+}
+
+
+
+/* rock javaScript */
+
+.cover,
+.cover1,
+.cover2,
+.cover3,
+.cover4,
+.cover5,
+.cover6,
+.cover7,
+.cover8,
+.cover9,
+.cover10 {
+  background-color: transparent;
+  /* min-width: 70px; */
+  /* ????how can I make the rocks shrink when the window's smaller */
+  position: absolute;
+  /* height: 100%; */
+  width: 8vw;
+}
+
+@media (max-width: 600px) {
+
+  .cover,
+  .cover1,
+  .cover2,
+  .cover3,
+  .cover4,
+  .cover5,
+  .cover6,
+  .cover7,
+  .cover8,
+  .cover9,
+  .cover10 {
+    width: 12vw;
+  }
+}
+
+.cover {
+  top: 70%;
+  left: 70%;
+}
+
+.cover1 {
+  top: 69%;
+  left: 70%;
+}
+
+.cover2 {
+  top: 72%;
+  left: 73%;
+}
+
+.cover3 {
+  top: 73%;
+  left: 68%;
+}
+
+.cover4 {
+  top: 71%;
+  left: 29%;
+}
+
+.cover5 {
+  top: 62%;
+  left: 43%;
+}
+
+.cover6 {
+  top: 65%;
+  left: 50%;
+}
+
+.cover7 {
+  top: 78%;
+  left: 62%;
+}
+
+.cover8 {
+  top: 66%;
+  left: 28%;
+}
+
+.cover9 {
+  top: 68%;
+  left: 25%;
+}
+
+.cover10 {
+  top: 67%;
+  left: 53%;
+}
+
+
+div.rockPiles {
+  position: relative;
+  width: 100%;
+  /* height: 13%; */
+}
+
+div.rockPiles img.eachRock {
+  /* position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 2; */
+  width: 100%;
+  height: auto;
+}
+
+#blackCat:hover {
+  background-color: rgba(248, 200, 136, 0.602);
+  border: none;
+  border-radius: 50px;
+  /* flash */
+  transition: background-color 0.2s;
+  /* Smooth transition for default state changes */
+  animation: flashEffect 1.5s infinite;
+}
