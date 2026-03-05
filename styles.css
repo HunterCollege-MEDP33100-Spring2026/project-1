@@ -1,16 +1,16 @@
 .logo img {
   top: 5%;
-  left: 78%;
+  left: 2%;
   height: 6vw;
   background-color: transparent;
   position: absolute;
-  animation: wiggle 1s ease-in-out infinite;
+  animation: wiggle 1s ease-in-out;
 }
 
 .logo h1 {
-  color: rgb(202, 110, 40);
+  color: rgb(212, 149, 203);
   top: 5%;
-  left: 84%;
+  left: 8%;
   height: 4vw;
   background-color: transparent;
   position: absolute;
@@ -99,8 +99,7 @@ body {
 #flashButton,
 #letCry,
 #doYouSee,
-#underRocks,
-#removeRocks {
+#underRocks {
   position: absolute;
   transform: translate(-50%, -50%);
   background-color: #555;
@@ -115,8 +114,8 @@ body {
   border-radius: 10px;
   text-align: center;
   /* flash ------!!! this doesnt work... */
-  transition: background-color 0.2s;
   /* Smooth transition for default state changes */
+  transition: background-color 0.2s;
   animation: flashEffect 1.5s infinite;
   font-family: "Amatic SC", sans-serif;
   font-weight: 400;
@@ -152,6 +151,28 @@ body {
   pointer-events: none;
   top: 30%;
   left: 50%;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #c6be60;
+  font-size: clamp(14px, 4vw, 28px);
+  color: rgb(111, 78, 8);
+  padding: clamp(8px, 2vw, 20px) clamp(16px, 4vw, 34px);
+  /* 20px 34px; */
+  border: none;
+  cursor: pointer;
+  max-width: 80vw;
+  width: max-content;
+  border-radius: 10px;
+  text-align: center;
+  /* flash ------!!! this doesnt work... */
+  transition: background-color 0.2s;
+  /* Smooth transition for default state changes */
+
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
 }
 
 
