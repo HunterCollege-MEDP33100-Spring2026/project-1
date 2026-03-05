@@ -1,1 +1,128 @@
-/*Your CSS goes here*/
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.book {
+  width: 800px;
+  max-width: 90%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+.page {
+  display: none;
+}
+
+
+.page.active {
+  display: block;
+  animation: fadeIn 0.8s ease;
+}
+
+
+/* IMAGE STYLING */
+.page img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+/* TEXT UNDER IMAGE */
+.text {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+
+/* COVER TITLE */
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+
+p {
+  margin: 0;
+}
+
+
+/* BUTTON */
+#nextBtn {
+  margin: 40px 0;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+#nextBtn:hover {
+  background: #f2f2f2;
+}
+
+
+/* Ending page slight fade */
+.ending img {
+  filter: grayscale(60%);
+}
+
+
+.final {
+  font-size: 22px;
+}
+
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* Bounce animation for title */
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+/* Soft zoom animation for images */
+.page.active img {
+  animation: zoomIn 1.5s ease;
+}
+
+
+/* Soft zoom animation for images */
+.page.active img {
+  animation: zoomIn 1.5s ease;
+}
+
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
