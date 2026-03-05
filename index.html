@@ -1,12 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="javascript/script.js"></script>
+    <header>
+        <title>Project 1</title>
+    </header>
 </head>
+
 <body>
-<!--Your HTML goes here.-->
+    <audio id="myAudio" controls autoplay>
+        <source src="Paseo - House of the Gipsies.mp3" type="audio/mpeg">
+    </audio>
+    <div class="sun"></div>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    <div class="ground"></div>
+
+    <div class="storyBox" id="storyBox1">
+        <p id="storyText1"></p>
+        <button id="btn1" style="display:none;" onclick="nextBox(); playSound();">Let's begin!</button>
+    </div>
+
+    <div class="storyBox2" id="storyBox2" style="display:none;">
+        <p id="storyText2"></p>
+        <button id="btn2" style="display:none;">Continue</button>
+    </div>
+
+    <div class="storyBox3" id="storyBox3" style="display:none;">
+        <p id="storyText3"></p>
+        <button id="btn3" style="display:none;">Continue</button>
+    </div>
+
+    <div class="storyBox4" id="storyBox4" style="display:none;">
+        <p id="storyText4"></p>
+        <button id="btn4" style="display:none;">Continue</button>
+    </div>
+
+    <div class="storyBox5" id="storyBox5" style="display:none;">
+        <p id="storyText5"></p>
+    </div>
+
+    <div class="house" id="house">
+        <img src="house.png" alt="house image">
+    </div>
+    <audio id="clickSound" src="mixkit-sci-fi-click-900.wav"></audio>
+
+
 </body>
+<script src="javascript/script.js"></script>
+
 </html>
