@@ -1,12 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="javascript/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Al-Fitr Story</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
-<!--Your HTML goes here.-->
+
+    <!-- Background Music -->
+    <audio id="bgMusic" src="sounds/ramadan music.mp3" loop></audio>
+
+    <!-- Floating Lanterns -->
+    <img src="images/img08.png" class="lantern" style="left:5%;">
+    <img src="images/img08.png" class="lantern" style="left:80%; animation-delay:3s;">
+    <img src="images/img08.png" class="lantern" style="left:70%; animation-delay:3.5s;">
+    <img src="images/img08.png" class="lantern" style="left:15%; animation-delay:3.9s;">
+    <img src="images/img08.png" class="lantern" style="left:30%; animation-delay:4.3s;">
+
+    <!-- HERO Section-->
+    <section class="hero">
+        <div class="moon"></div>
+        <h1 class="title">Eid Al-Fitr</h1>
+        <p class="history">
+
+            Eid al-Fitr marks the end of Ramadan, the holy month of fasting in Islam.
+            It is a celebration of gratitude, generosity, prayer, and unity.
+            Muslims gather for special prayers, give charity (Zakat al-Fitr),
+            and celebrate with loved ones.
+
+        </p>
+        <button id="startBtn">Let's Begin</button>
+    </section>
+
+    <!-- STORY Section 1 -->
+
+    <section class="panel eid-section">
+
+        <h1> Click to Know My Way to Eid 🌙</h1>
+
+        <div class="image-row">
+
+            <div class="image-box">
+                <img src="images/img03.jpg" class="story-img" onclick="toggleText('text1')">
+                <div id="text1" class="hidden-text">
+                    Eid is the celebration of one month of fasting and worshiping towards our Allah(God). We have to
+                    fast from sunrise to sunset, in order to do so we have to wake up really early in the morning and
+                    eat “suhoor” , the food we eat before starting to fast. I like Ramadan because it brings all of my
+                    family together and we gather to eat suhoor and partake in the worship as a whole. My mom calls
+                    everyone while my siblings and I are barely keeping our eyes open. Then rush to finish our food
+                    before times up and drink gallons of water thinking this will hydrate for the whole day. It digests
+                    before even we finish our prayers. Thus the midnight environment feels very different.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image-box">
+                <img src="images/img04.jpg" class="story-img" onclick="toggleText('text2')">
+                <div id="text2" class="hidden-text">
+
+                    Breaking the fast was another celebration for us. After a long wait we eat and drink water or
+                    any type of juice and it is called “Iftar”. Most of the household prepares different types of
+                    food
+                    of their liking. As for my home we have lemonade or orange juice, dates, fried snacks and
+                    different
+                    types of fruits. It varies each day. My siblings and I used to help my mother make the iftar. In
+                    the
+                    process of helping we gossiped, laughed together, sometimes fought and that moment was filled
+                    with joy and peace.
+
+                    </p>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="images/img05.jpg" class="story-img" onclick="toggleText('text3')">
+                <div id="text3" class="hidden-text">
+                    The night before Eid day is called "Laylat al-Jaiza (the Night of Reward)". 30 days of fasting
+                    finally comes to an end and the sound of celebration starts after the last day of iftar. People
+                    come out to light fireworks and people go to festive markets to celebrate ahead.Most adults
+                    prepare the food for Eid and children and teens go out to hang out with friends. For me it was
+                    mostly helping with the preparation and then doing the “Henna(tattoo with organic henna leaf
+                    paste)” on our hands. Most of the girls do henna on their hands in many creative designs. I do
+                    mine and my sisters all together and play some joyful music for Eid.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <button class="next-btn" onclick="goToNext()">Next →</button>
+
+    </section>
+
+    <!-- STORY Section 2 -->
+
+
+    <section class="panel eid-section-two" id="section2">
+
+         <h2> My Eid Day </h2>
+
+        <div class="text-box">
+            <p>
+                Finally, it’s Eid day! In the morning we take a shower and wear new dresses, do some makeup and eat
+                something sweet or any Eid food. In the meantime the male figures go to the mosque and pray Eid prayer
+                as a big group. After that they come back and have some sweets. Children and younger people get Eidi
+                (money as gift) from their elders and wish them Happy Eid Day or simply by saying “Eid Mubarak”. I get
+                eidi from my parents' relatives and in the afternoon starts with real feasting. So many types of rich
+                foods and soda for celebrating, we used to visit our relatives and they visited our home to do Eid
+                together. Sometimes me and my cousins went outside to hang out such as in a park or any Eid fairs. This
+                celebration of Eid lasts for days and people from across the world celebrate it and enjoy themselves as
+                muslims with much joy and pleasure.
+            </p>
+        </div>
+
+        <div class="image-row">
+
+            <div class="image-box">
+                <img src="images/img02.jpg" class="story-img">
+            </div>
+
+            <div class="image-box">
+                <img src="images/img06.jpg" class="story-img">
+            </div>
+
+              <div class="image-box">
+                <img src="images/img12.png" class="story-img">
+            </div>
+            <div class="image-box">
+                <img src="images/img11.jpg" class="story-img">
+            </div>
+
+        </div>
+
+    </section>
+   <footer class="footer">
+    <p>Sources: Google, AI, Pinterest, CSS School</p>
+    <p>&copy; 2026 Nafisa Islam</p>
+</footer>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
